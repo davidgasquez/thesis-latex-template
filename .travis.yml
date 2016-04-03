@@ -1,9 +1,11 @@
-before_install:
-   - sudo apt-get update
+sudo: false
 
-install:
-    - sudo apt-get install -y texlive
-    - sudo apt-get install -y texlive-latex-extra
+addons:
+  apt:
+    packages:
+      - texlive
+      - latexmk
+      - texlive-latex-extra
 
 script:
-    - make
+- make
