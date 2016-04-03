@@ -1,6 +1,6 @@
 .PHONY: latexmk clean dev pdf all
 
-COMMON_FLAGS = -pdf -pdflatex="pdflatex -interaction=nonstopmode --shell-escape %O %S"
+COMMON_FLAGS = -pdf
 
 all: pdf
 
@@ -11,4 +11,4 @@ dev: thesis.tex
 	latexmk $(COMMON_FLAGS) -pvc -view=none $<
 
 clean:
-	latexmk $(COMMON_FLAGS) -C
+	latexmk $(COMMON_FLAGS) -c
