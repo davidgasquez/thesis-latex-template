@@ -1,7 +1,6 @@
 .PHONY: latexmk clean dev pdf all
 
-OUTPUT_FOLDER = output
-COMMON_FLAGS = -output-directory=$(OUTPUT_FOLDER) -pdf -pdflatex="pdflatex -interaction=nonstopmode"
+COMMON_FLAGS = -pdf -pdflatex="pdflatex -interaction=nonstopmode"
 
 all: pdf
 
