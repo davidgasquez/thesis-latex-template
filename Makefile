@@ -1,6 +1,6 @@
 .PHONY: latexmk clean dev pdf all
 
-COMMON_FLAGS = -pdf -pdflatex="pdflatex -interaction=nonstopmode"
+COMMON_FLAGS = -pdf -pdflatex="pdflatex -interaction=nonstopmode --shell-escape %O %S"
 
 all: pdf
 
