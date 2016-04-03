@@ -8,4 +8,4 @@ addons:
       - texlive-latex-extra
 
 script:
-- make
+  - make
