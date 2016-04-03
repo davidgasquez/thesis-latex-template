@@ -8,5 +8,4 @@ addons:
       - texlive-latex-extra
 
 script:
-  - latexmk --version
   - make
