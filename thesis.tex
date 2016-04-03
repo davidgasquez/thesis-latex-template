@@ -1,36 +1,168 @@
-\documentclass{article}
-\usepackage{graphicx}
+\documentclass[a4paper, 12pt]{report}
+
+\input{include/preamble}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\bfseries}{}{0ex}{\Huge\centering}[\vspace{1.2ex}\titlerule]
+\titlespacing{\chapter}{0.0ex}{0ex}{5ex}
+
+% Document information
+\title{Title}
+\author{Full Name}
+\date{}
+
+\newenvironment{dedication}{
+    \vspace{30ex}
+    \begin{quotation}
+        \begin{center}
+            \begin{em}}
+                {
+            \end{em}
+        \end{center}
+    \end{quotation}
+}
 
 \begin{document}
 
-\title{Introduction to \LaTeX{}}
-\author{Author's Name}
-
 \maketitle
 
+%-------------------------------------------------------------------------------
+%	Prefaces
+%-------------------------------------------------------------------------------
+
 \begin{abstract}
-The abstract text goes here.
+    Quisque euismod \emph{varius} elit, id posuere purus \emph{ultricies} vel.
+    Nullam porttitor, augue ut tempus tincidunt, diam purus hendrerit metus,
+    et auctor lacus ipsum convallis urna. Cras ultrices convallis leo sit amet
+    congue. Nuncs arcu felis, scelerisque in purus vel, dapibus pellentesque
+    sapien.
 \end{abstract}
 
+\begin{dedication}
+    Hello, here is some
+    text without a meaning.
+    This text should show what
+    a printed text will look
+    like at this place.
+\end{dedication}
+\thispagestyle{empty}
+
+\tableofcontents
+\thispagestyle{empty}
+
+\listoffigures
+\thispagestyle{empty}
+
+\listoftables
+\thispagestyle{empty}
+
+%-------------------------------------------------------------------------------
+%	Content
+%-------------------------------------------------------------------------------
+
+\chapter{Lorem Ipsum}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue nisi,
+tristique eu faucibus eget, accumsan id est. Vestibulum quis ligula porttitor,
+dictum diam maximus, rhoncus quam. Sed ultrices dictum pretium. Morbi ut dui in
+enim dictum pretium ut vel nibh. Pellentesque tempor rhoncus ex, vulputate
+feugiat tellus molestie sit amet. In porttitor, nibh et scelerisque pharetra,
+ligula ligula tristique leo, sed porta arcu erat a sapien. Aenean eget sagittis
+lorem.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c c c c|}
+        \hline
+        Col1 & Col2 & Col2 & Col3 \\
+        \hline
+        1 & 6 & 87837 & 787 \\
+        2 & 7 & 78 & 5415 \\
+        3 & 545 & 778 & 7507 \\
+        4 & 545 & 18744 & 7560 \\
+        5 & 88 & 788 & 6344 \\
+        \hline
+    \end{tabular}
+    \caption{Table to test captions and labels}
+    \label{table}
+\end{table}
+
+Fusce interdum tempus gravida. Suspendisse elementum eros ac feugiat bibendum.
+Proin blandit hendrerit urna nec dignissim. Aenean tristique congue velit sed
+suscipit. Nulla sed felis lacinia, dapibus nulla varius, congue ipsum. Ut
+efficitur quis sem nec lacinia. Proin eget tortor cursus, aliquam velit sit
+amet, convallis enim. Suspendisse elit erat, ornare a pellentesque finibus, v
+ehicula et odio.
+
 \section{Introduction}
-Here is the text of your introduction.
+
+Quisque euismod varius elit, id posuere purus ultricies vel. Nullam porttitor,
+augue ut tempus tincidunt rices convallis leo sit amet congue. Nunc arcu felis,
+scelerisque in purus vel, dapibus pellentesque sapien. Nulla venenatis
+tincidunt neque et tristique.
 
 \begin{equation}
     \label{simple_equation}
     \alpha = \sqrt{ \beta }
 \end{equation}
 
-\subsection{Subsection Heading Here}
-Write your subsection text here.
+\section{Explanation}
 
-\begin{figure}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae mauris
+pulvinar, rutrum nisi eu, laoreet purus. Mauris luctus nisi magna, et semper
+est semper malesuada.
+
+Praesent in nulla iaculis, lobortis elit id, condimentum
+ante. In scelerisque ultrices nisl at ullamcorper. Sed varius placerat massa.
+Praesent ac lorem et elit tempus suscipit eget vitae orci. Nulla rhoncus sed
+diam nec ornare. Curabitur sagittis viverra malesuada. In volutpat turpis et
+libero consectetur, imperdiet accumsan mi rutrum.
+
+\begin{minted}[baselinestretch=1.2]{python}
+s = set(['s', 'p', 'a', 'm'])
+l = ['s', 'p', 'a', 'm']
+
+def lookup_set(s):
+    return 's' in s
+
+def lookup_list(l):
+    return 's' in l
+\end{minted}
+
+Praesent in nulla iaculis, lobortis elit id, condimentum
+ante. In scelerisque ultrices nisl at ullamcorper. Sed varius placerat massa.
+Praesent ac lorem et elit tempus suscipit eget vitae orci. Nulla rhoncus sed
+diam nec ornare. Curabitur sagittis viverra malesuada. In volutpat turpis et
+libero consectetur, imperdiet accumsan mi rutrum.
+
+\begin{center}
+	\textbf{\emph{I am the one who knocks}}
+\end{center}
+
+Quisque euismod varius elit, id posuere purus ultricies vel. Nullam porttitor,
+augue ut tempus tincidunt, diam purus hendrerit metus, et auctor lacus ipsum
+convallis urna. Cras ultrices convallis leo sit amet congue. Nunc arcu felis,
+scelerisque in purus vel, dapibus pellentesque sapien. Nulla venenatis
+tincidunt neque et tristique. Cras blandit diam sit amet justo ornare, ac
+tristique libero mattis. Integer ultricies purus dapibus lacus imperdiet
+dapibus. Aenean sagittis cursus purus eget vehicula. Morbi in venenatis nunc,
+nec cursus odio. Nam elementum pulvinar nisl, non rutrum nulla vestibulum at.
+Nunc feugiat mollis eros ac sagittis.
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=3.0in]{figures/logos/logo_ugr.png}
-    \caption{Simulation Results}
-    \label{simulationfigure}
+    \includegraphics[width=3cm]{figures/logos/logo_ugr.png}
+    \caption{Logo}
+    \label{logo}
 \end{figure}
 
 \section{Conclusion}
-Write your conclusion here.
+Praesent in nulla iaculis, lobortis elit id, condimentum
+ante. In scelerisque ultrices nisl at ullamcorper. Sed varius placerat massa.
+Praesent ac lorem et elit tempus suscipit eget vitae orci. Nulla rhoncus sed
+diam nec ornare. Curabitur sagittis viverra malesuada. In volutpat turpis et
+libero consectetur, imperdiet accumsan mi rutrum.
 
 \end{document}
