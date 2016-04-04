@@ -32,8 +32,29 @@
 % Code syntax highlight
 \usepackage{minted}
 
+% Import
+\usepackage{import}
+
 % Paragraph Configuration
 \usepackage{indentfirst}
 \setlength{\parindent}{2em}
 \setlength{\parskip}{1em}
 \linespread{1.25}
+
+
+%-------------------------------------------------------------------------------
+%    Custom Environments
+%-------------------------------------------------------------------------------
+
+\newenvironment{dedication}{
+    \vspace{30ex}
+    \begin{quotation}
+        \vspace*{\fill}
+        \begin{flushright}
+            \begin{em}}
+                {
+            \end{em}
+        \end{flushright}
+        \vspace*{\fill}
+    \end{quotation}
+}

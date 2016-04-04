@@ -5,41 +5,15 @@
 
 \input{include/preamble}
 
-% Chapter header format
-\usepackage{titlesec}
-
-\usepackage{import}
-
-\titleformat{\chapter}[display]
-{\bfseries}{}{0ex}{\Huge\centering}
-[\vspace{1.2ex}\titlerule]
-
-\titlespacing{\chapter}{0.0ex}{0ex}{5ex}
-
-%-------------------------------------------------------------------------------
-%    Docunment Information
-%-------------------------------------------------------------------------------
 \title{Title}
 \author{Full Name}
 \date{}
 
-% Custom Dedication Environment
-\newenvironment{dedication}{
-    \vspace{30ex}
-    \begin{quotation}
-        \vspace*{\fill}
-        \begin{center}
-            \begin{em}}
-                {
-            \end{em}
-        \end{center}
-        \vspace*{\fill}
-    \end{quotation}
-}
 
 %-------------------------------------------------------------------------------
-%    Docunment
+%    Document
 %-------------------------------------------------------------------------------
+
 \begin{document}
 
 \maketitle
@@ -48,6 +22,6 @@
 
 \import{content/}{introduction.tex}
 
-\import{content/}{demo.tex}
+\import{content/}{solution.tex}
 
 \end{document}
