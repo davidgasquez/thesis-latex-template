@@ -17,11 +17,11 @@ if you notice something wrong or with room from improvement.
 - Make your thesis.
 - Run `make` to generate the output file.
 
-### Continuous Compilation
+## Continuous Compilation
 If you plan to use this I'd recommend to run `make dev` as it re-makes the
 pdf file with any change.
 
-### Linters
+## Linters
 If [write-good] and [proselint] are installed, you can run `make lint` to get a
 list of warnings and tips for improving writing. Those tools are naive linters
 for English prose.
