@@ -5,11 +5,16 @@
 % Correct encoding
 \usepackage[T1]{fontenc}
 
-% Use Latin Modern font
-\usepackage[]{charter} % \usepackage[sfdefault]{roboto}
+% Use tgheros(sans-serif)
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+
+% Section with Series style
+\usepackage{sectsty}
+\allsectionsfont{\usefont{T1}{ppl}{b}{}}
 
 \usepackage{xcolor}
-\color{darkgray} % TODO: Darker
+\color[rgb]{0.1,0.1,0.1}
 
 % Document language
 \usepackage[english]{babel}
