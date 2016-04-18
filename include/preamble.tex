@@ -1,3 +1,6 @@
+%-------------------------------------------------------------------------------
+%    Package Loading
+%-------------------------------------------------------------------------------
 
 % Accents recognition
 \usepackage[utf8]{inputenc}
@@ -5,7 +8,7 @@
 % Correct encoding
 \usepackage[T1]{fontenc}
 
-% Use tgheros(sans-serif)
+% Use tgheros(sans serif)
 \usepackage{tgheros}
 \renewcommand*\familydefault{\sfdefault}
 
@@ -13,6 +16,7 @@
 \usepackage{sectsty}
 \allsectionsfont{\usefont{T1}{ppl}{b}{}}
 
+% Make text a bit brighter
 \usepackage{xcolor}
 \color[rgb]{0.1,0.1,0.1}
 
@@ -49,6 +53,9 @@
 \setlength{\parskip}{1em}
 \linespread{1.25}
 
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
 
 %-------------------------------------------------------------------------------
 %    Custom Environments
@@ -60,11 +67,11 @@
     \vspace{30ex}
     \begin{quotation}
         \vspace*{\fill}
-        \begin{flushright}
+        \begin{center}
             \begin{em}}
                 {
             \end{em}
-        \end{flushright}
+        \end{center}
         \vspace*{\fill}
     \end{quotation}
 }
