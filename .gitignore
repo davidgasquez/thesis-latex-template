@@ -3,8 +3,12 @@ thesis.fls
 thesis.log
 thesis.lof
 thesis.lot
+thesis.bcf
 thesis.toc
+thesis.bbl
+thesis.blg
 thesis.out
+thesis.run.xml
 thesis.fdb_latexmk
 thesis.pdf
 thesis.synctex.gz
