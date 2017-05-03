@@ -5,7 +5,7 @@
 This LaTeX template is designed to be used as skeleton for a standard thesis.
 
 I am by no ways an expert with LaTeX so please, don't hesitate to open an issue
-if you notice something wrong or with room from improvement.
+if you notice something wrong or with room for improvement.
 
 ## Quickstart
 - Clone the Github repository.
@@ -18,7 +18,7 @@ pdf file with any change.
 
 ## Linters
 If [write-good] and [proselint] are installed, you can run `make lint` to get a
-list of warnings and tips for improving writing. Those tools are naive linters
+list of warnings and tips for improving the style. Those tools are naive linters
 for English prose.
 
 [write-good]: https://github.com/btford/write-good
